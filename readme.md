@@ -1,18 +1,10 @@
 # Grym & Grim - Rock Band Landing Page
 
-![GitHub Pages](https://img.shields.io/github/deployments/YOUR_USERNAME/loto-test-project/production?label=demo&logo=github)
-
 A modern and responsive landing page for the fictional Ukrainian rock band "Grym & Grim" (Thunder & Roar). This project is built with modern web technologies and demonstrates a clean, component-based approach to frontend development.
 
 ---
 
-### **[➡️ View Live Demo](https://YOUR_USERNAME.github.io/loto-test-project/)**
-
-_(Please replace `YOUR_USERNAME` and `loto-test-project` with your actual GitHub username and repository name)_
-
-_(Suggestion: Replace this with a real screenshot of your project)_
-
----
+### **[➡️ View Live Demo](https://lvlashnin.github.io/LotoTest/)**
 
 ## ✨ Features
 
@@ -84,19 +76,4 @@ Make sure you have Node.js and npm installed on your machine.
 
   ```sh
   npm run dev
-  ```
-
-  This will open the project in your browser with hot-reloading enabled.
-
-- **To build the project for production:**
-
-  ```sh
-  npm run build
-  ```
-
-  This will create a `dist` folder with the optimized and minified files.
-
-- **To deploy the project to GitHub Pages:**
-  ```sh
-  npm run deploy
   ```
