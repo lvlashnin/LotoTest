@@ -41,39 +41,4 @@ This project was built using the following technologies:
 
 ---
 
-## 🚀 Getting Started
 
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-Make sure you have Node.js and npm installed on your machine.
-
-- Node.js (which includes npm)
-
-### Installation
-
-1.  **Clone the repository:**
-
-    ```sh
-    git clone https://github.com/YOUR_USERNAME/loto-test-project.git
-    ```
-
-2.  **Navigate to the project directory:**
-
-    ```sh
-    cd loto-test-project
-    ```
-
-3.  **Install NPM packages:**
-    ```sh
-    npm install
-    ```
-
-### Running the Project
-
-- **To run the development server:**
-
-  ```sh
-  npm run dev
-  ```
