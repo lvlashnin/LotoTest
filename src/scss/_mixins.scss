@@ -1,0 +1,22 @@
+@use "variables";
+
+@mixin respond-to($breakpoint, $rule: "min") {
+  $breakpoints: (
+    "sm": variables.$breakpoint-sm,
+    "md": variables.$breakpoint-md,
+    "lg": variables.$breakpoint-lg,
+    "xl": variables.$breakpoint-xl,
+  );
+
+  $width: map-get($breakpoints, $breakpoint);
+
+  @if $rule == "min" {
+    @media (min-width: $width) {
+      @content;
+    }
+  } @else if $rule == "max" {
+    @media (max-width: ($width - 1px)) {
+      @content;
+    }
+  }
+}

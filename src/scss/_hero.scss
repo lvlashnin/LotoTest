@@ -1,0 +1,71 @@
+@use "variables";
+@use "mixins";
+
+.hero {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/hero_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__title {
+    color: variables.$text-color-primary;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @include mixins.respond-to(md) {
+      font-size: 3rem;
+    }
+  }
+
+  &__subtitle {
+    color: variables.$text-color-primary;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+
+    @include mixins.respond-to(md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  &__accent {
+    color: variables.$text-color-accent;
+  }
+
+  &__button {
+    background-color: variables.$accent-primary;
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    align-self: stretch;
+    width: auto;
+    min-width: 15.625rem;
+    margin-top: 2rem;
+
+    @include mixins.respond-to(md) {
+      align-self: flex-start;
+    }
+  }
+}

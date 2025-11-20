@@ -1,0 +1,82 @@
+@use "variables";
+@use "mixins";
+
+.footer {
+  background-color: darken(variables.$bg-color, 5%);
+  padding: 2.5rem 0;
+  color: variables.$text-color-secondary;
+  font-size: 0.875rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  @include mixins.respond-to(md, "max") {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left {
+      order: 2;
+      text-align: center;
+    }
+
+    &__social {
+      order: 1;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+  }
+
+  &__link {
+    color: variables.$text-color-secondary;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variables.$accent-primary;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  gap: 1.5rem;
+
+  &__link {
+    color: variables.$text-color-secondary;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      color: variables.$accent-primary;
+      transform: scale(1.1);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+}
